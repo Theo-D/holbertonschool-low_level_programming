@@ -14,7 +14,7 @@ int main(void)
 
 	for (asciiLetter = 97 ; asciiLetter < 123 ; asciiLetter++)
 	{
-		if(asciiLetter != 101 && asciiLetter != 113)
+		if (asciiLetter != 101 && asciiLetter != 113)
 		{	
 			putchar(asciiLetter);
 		}
