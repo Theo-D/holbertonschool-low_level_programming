@@ -13,13 +13,11 @@
 int main(void)
 {
 	int n;
-	int nombre;
 	int mod;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	nombre = abs(n);
-	mod = nombre % 10;
+	mod = n % 10;
 
 	if(mod > 5)
 	{
