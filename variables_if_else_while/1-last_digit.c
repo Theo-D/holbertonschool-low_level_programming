@@ -25,7 +25,7 @@ int main(void)
 	}
 	else if(mod == 0)
 	{
-		printf("Last digit of %d is 0\n", n);
+		printf("Last digit of %d is %d\n", n, mod);
 	}
 	else
 	{
