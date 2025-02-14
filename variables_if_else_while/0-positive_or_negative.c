@@ -4,7 +4,7 @@
 
 /**
  * checks if n is positive, negative or equal to zero and returns
- *its value plus a statement about it being lesser, equal or greater than zero 
+ *its value plus a statement about it being lesser, equal or greater than zero
  */
 int main(void)
 {
