@@ -5,7 +5,8 @@
 /**
  *main - Checks if n is positive, negative or equal to zero
  *
- * Return: the value of n followed by a statement on it being lesser, equal or greater than 0
+ * Return: the value of n followed by a statement on it 
+ * being lesser, equal or greater than 0
  */
 int main(void)
 {
