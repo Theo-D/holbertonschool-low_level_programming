@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * checks if n is positive, negative or equal to zero and returns
- *its value plus a statement about it being lesser, equal or greater than zero
+ *main - Checks if n is positive, negative or equal to zero
+ *
+ * Return: the value of n followed by a statement on it being lesser, equal or greater than 0
  */
 int main(void)
 {
