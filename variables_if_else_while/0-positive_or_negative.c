@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**checks if n is positive, negative or equal to zero and returns
  *its value plus a statement about it being lesser, equal or greater than zero 
  */
