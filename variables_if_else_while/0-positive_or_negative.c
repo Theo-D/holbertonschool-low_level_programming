@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/**checks if n is positive, negative or equal to zero and returns
+/**
+ * checks if n is positive, negative or equal to zero and returns
  *its value plus a statement about it being lesser, equal or greater than zero 
  */
 int main(void)
