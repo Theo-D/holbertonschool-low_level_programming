@@ -11,7 +11,7 @@ int main(void)
 {
 	int asciiLetter;
 
-	for(asciiLetter = 97 ; asciiLetter < 123 ; asciiLetter++)
+	for (asciiLetter = 97 ; asciiLetter < 123 ; asciiLetter++)
 	{
 		putchar(asciiLetter);
 	}
