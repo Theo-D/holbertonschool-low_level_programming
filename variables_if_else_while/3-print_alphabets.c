@@ -16,9 +16,9 @@ int main(void)
 		putchar(asciiLetter);
 	}
 	for (asciiLetter = 65 ; asciiLetter < 91 ; asciiLetter++)
-        {
-                putchar(asciiLetter);
-        }
+	{
+		putchar(asciiLetter);
+	}
 	putchar('\n');
 	return (0);
 }
