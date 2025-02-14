@@ -13,7 +13,7 @@ int main(void)
 
 	for (base10Num = 0 ; base10Num < 10 ; base10Num++)
 	{
-		printf("%d",base10Num);
+		printf("%d", base10Num);
 	}
 	putchar('\n');
 	return (0);
