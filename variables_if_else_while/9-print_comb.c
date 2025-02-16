@@ -11,21 +11,16 @@
 int main(void)
 {
 	int asciinubmers;
-	int asciinubmers2;
 
 	for (asciinubmers = 48 ; asciinubmers < 58 ; asciinubmers++)
 	{
-		for (asciinubmers2 = 48 ; asciinubmers2 < 58 ; asciinubmers2++)
+		putchar(asciinubmers);
+		if (asciinubmers != 57)
 		{
-				putchar(asciinubmers);
-				putchar(asciinubmers2);
-				if (asciinubmers != 57 || asciinubmers2 != 57) /*Pourquoi || et pas && ?*/
-				{
-					putchar(',');
-					putchar(' ');
-				}
-		}
-		
+			putchar(',');
+			putchar(' ');
+		}	
 	}
+	putchar('\n');
 	return (0);
 }
