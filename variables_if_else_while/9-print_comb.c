@@ -5,7 +5,7 @@
 /**
 *main - cycle through every digit from 0 to 9
 *
-* Return: prints every combination of every base 10 
+* Return: prints every combination of every base 10
 * single digits separated by ", "
 */
 int main(void)
@@ -19,7 +19,7 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-		}	
+		}
 	}
 	putchar('\n');
 	return (0);
