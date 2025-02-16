@@ -20,7 +20,11 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		else if (asciinubmers == 57)
+		{
+			putchar('\n');
+		}
+		/**Pourquoi Betty renvoie un avertissement si je met putchar() ici? */
 	}
-	putchar('\n');
 	return (0);
 }
