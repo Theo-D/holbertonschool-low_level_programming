@@ -17,18 +17,15 @@ int main(void)
 	{
 		for (asciinubmers2 = asciinubmers + 1 ; asciinubmers2 < 58 ; asciinubmers2++)
 		{
-				putchar(asciinubmers);
-				putchar(asciinubmers2);
-				if (asciinubmers != 56 || asciinubmers2 != 57) /*Pourquoi || et pas && ?*/
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				else if (asciinubmers == 56 && asciinubmers2 == 57)
-				{
-					putchar('\n');
-				}
+			putchar(asciinubmers);
+			putchar(asciinubmers2);
+			if (asciinubmers != 56 || asciinubmers2 != 57) /*Pourquoi || et pas && ?*/
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
