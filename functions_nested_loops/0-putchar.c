@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - loops through string[] to print every letters in the array
  *
  * Return: Always 0.
  */
@@ -13,6 +13,7 @@ int main(void)
 	{
 		_putchar(string[letter]);
 		letter++;
-	}	
+	}
 	return (0);
 }
+
