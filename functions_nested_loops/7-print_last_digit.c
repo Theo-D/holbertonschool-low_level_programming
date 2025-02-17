@@ -1,4 +1,5 @@
 #include "main.h"
+#include "6-abs.c" /**Déso pas déso */
 
 /**
  *print_last_digit - Displays the last digit of given number
