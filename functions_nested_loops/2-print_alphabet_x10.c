@@ -11,12 +11,13 @@ void print_alphabet_x10(void)
 	int letter;
 	int loop = 0;
 
-	while(loop  < 10)
+	while (loop  < 10)
 	{
 		letter = 97; /**doit être assigné juste avant la seconde
 		*boucle while sinon à la fin de la seconde boucle, n'accédant
-	       	*plus à la variable 'lettre', celle-ci conservera la valeur 123
-		*et la première boucle n'imprimera que '\n' 10 fois*/
+		*plus à la variable 'lettre', celle-ci conservera la valeur 123
+		*et la première boucle n'imprimera que '\n' 10 fois
+		*/
 
 		while (letter < 123)
 		{
