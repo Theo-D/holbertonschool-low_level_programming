@@ -8,8 +8,8 @@
 int main(void)
 {
 	int letter = 0 ;
-	char string[9] = "_putchar";
-	while (letter < 9)
+	char string[10] = "_putchar\n";
+	while (letter < 10)
 	{
 		_putchar(string[letter]);
 		letter++;
