@@ -5,3 +5,4 @@
 4-isalpha.c - Contains the definition of _isalpha() that tests if a character is alphabetical or not.
 5-print_sign.c - Contains the definition of print_sign() that tests if a character is >, = or < than 0.
 6-abs.c - Contains the definition of _abs() that prints a given number to its absolute value.
+7-last_digit.c - Contains the definition of print_last_digit() that prints the last digit of a given number.
