@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - loops through letters from a to z and prints each one of them
+ * print_alphabet - loops through letters from a to z 
+ * and prints each one of them
  *
  * Return: Always 0.
  */
