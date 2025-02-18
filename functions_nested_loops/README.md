@@ -7,3 +7,4 @@
 6-abs.c - Contains the definition of _abs() that prints a given number to its absolute value.
 7-last_digit.c - Contains the definition of print_last_digit() that prints the last digit of a given number.
 8-24_hours.c - Contains the definition for a function that prints every minutes of a day starting from 00:00.
+9-times_table.c - Contains the definition for a function that prints every times tables from 0 to 9.
