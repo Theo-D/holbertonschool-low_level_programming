@@ -9,3 +9,4 @@
 8-24_hours.c - Contains the definition for a function that prints every minutes of a day starting from 00:00.
 9-times_table.c - Contains the definition for a function that prints every times tables from 0 to 9.
 10-add.c - Contains the definition for a function that prints the result of the addition of two numbers.
+11-print_to_98.c - Contains the definition for a function that prints every natural number from a given number to 98.
