@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *print_to_98 - Prints every 9 times table
- *
- * Return: the result of every multiplication
- * from every times table from 0 to 9
+ *print_to_98 - prints every natural numbers from given number to 98
+ *@n: The natural number from which to start the count to 98 
+
+ * Return: Every natural number from n to 98
  */
 void print_to_98(int n)
 {
