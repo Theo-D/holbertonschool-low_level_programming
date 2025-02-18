@@ -20,22 +20,10 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		if (n == -2147483648)
-		{
-			int abs = _abs(n + 1);
-
-			mod = abs % 10;
-			mod += 1;
-			_putchar(mod + '0');
-			return (mod);
-		}
-		else
-		{
-			int abs = _abs(n);
-
-			mod = abs % 10;
-			_putchar(mod + '0');
-			return (mod);
-		}
+		mod = n % 10;
+		mod *= (-1);
+		_putchar(mod + 48);
+		return (mod);
 	}
+
 }
