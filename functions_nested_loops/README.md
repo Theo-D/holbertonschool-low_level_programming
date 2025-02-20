@@ -11,3 +11,4 @@
 10-add.c - Contains the definition for a function that prints the result of the addition of two numbers.
 11-print_to_98.c - Contains the definition for a function that prints every natural number from a given number to 98.
 12-Write a function that prints the n times table, starting with 0.
+101-natural.c - Contains the definition for add_naturals() that prints the sum of every natural numbers that are multiples of 5 and 3 below 1024 (excluded).
