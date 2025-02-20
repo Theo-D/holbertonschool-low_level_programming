@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *times_table - Prints every 9 times table
+ *add_naturals - prints the sum of every natural number below
+ *1024 (excluded) that are multiples of 5 or 3
  *
- * Return: the result of every multiplication
- * from every times table from 0 to 9
+ * Return: The sum of every numbers
  */
 void add_naturals(void)
 {
@@ -13,15 +12,20 @@ void add_naturals(void)
 
 	for (num = 1023; num >= 0 ; num--)
 	{
-		if (num % 3 == 0 || num % 5 == 0 )
+		if (num % 3 == 0 || num % 5 == 0)
 		{
 			toAdd += num;
 		}
 
 	}
-	printf("%d \n", toAdd);
+	printf("%d\n", toAdd);
 }
 
+/**
+ *main - Calls add_naturals()
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	add_naturals();
