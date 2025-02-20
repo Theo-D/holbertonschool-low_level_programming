@@ -20,6 +20,5 @@ void add_naturals(void)
 		}
 
 	}
-	printf("%d", toAdd);
-	putchar('\n');
+	printf("%d \n", toAdd);
 }
