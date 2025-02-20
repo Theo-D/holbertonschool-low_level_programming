@@ -7,7 +7,7 @@
  * Return: the result of every multiplication
  * from every times table from 0 to 9
  */
-void add_naturals(void)
+int add_naturals(void)
 {
 	int num;
 	int toAdd = 0;
@@ -21,4 +21,5 @@ void add_naturals(void)
 
 	}
 	printf("%d \n", toAdd);
+	return (0);
 }
