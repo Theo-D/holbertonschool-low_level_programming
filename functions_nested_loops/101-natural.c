@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
  *times_table - Prints every 9 times table
  *
  * Return: the result of every multiplication
  * from every times table from 0 to 9
  */
-int add_naturals(void)
+void add_naturals(void)
 {
 	int num;
 	int toAdd = 0;
@@ -21,5 +20,10 @@ int add_naturals(void)
 
 	}
 	printf("%d \n", toAdd);
+}
+
+int main(void)
+{
+	add_naturals();
 	return (0);
 }
