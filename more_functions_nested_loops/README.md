@@ -7,3 +7,6 @@
 6-print_line - Prints a given number of '_'.
 7-print_diagonal - Printsa given number of diagonal lines in the for of '\'.
 8-print_square - Prints a square out of '#' of given base and height.
+9-fizz_buzz - prints numbers from 1 to 100 but prints any multiple of 3 as "Fizz",
+any multiple of 5 as "Buzz" and any multiple of both as "FizzBuzz".
+
