@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- *print_diagonal - prints a given number of diagonal lines.
- *@n: The number of lines to be printed
+ *print_triangle - prints a triangle of a given numer 'size'.
+ *@size: the size out of which building the triangle
  *
- *Return: The number of lines to be printed
+ *Return: A triangle made of "#".
  */
 
 void print_triangle(int size)
 {
 	int i, j;
-	int k = size -1;
+	int k = size - 1;
 
 	if (size <= 0)
 	{
