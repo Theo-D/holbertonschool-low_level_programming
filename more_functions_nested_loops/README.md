@@ -6,3 +6,4 @@
 5-more_numbers - Prints every number from 1 to 14 ten times.
 6-print_line - Prints a given number of '_'.
 7-print_diagonal - Printsa given number of diagonal lines in the for of '\'.
+8-print_square - Prints a square out of '#' of given base and height.
