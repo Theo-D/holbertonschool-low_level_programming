@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - Loops through str[] and print every character in it.
- * @str: The string to be printed to stdout.
+ * print_rev - Prints a given string in reverse.
+ * @s: The string to be reversed.
  *
- * Return - The string given as param.
+ * Return - The given string reversed.
  */
 void print_rev(char *s)
 {
