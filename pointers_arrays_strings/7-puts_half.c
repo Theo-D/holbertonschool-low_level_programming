@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * rev_string - Reverses a given string.
- * @s: The string to be reversed.
+ * puts_half - Prints the half of a string, rounded up.
+ * @str: The string to be partialy printed.
  *
- * Return - The reversed string.
+ * Return - The half of given string.
  */
 void puts_half(char *str)
 {
