@@ -2,7 +2,12 @@
 #include <stdio.h>
 
 /**
- * 
+ * print_array - prints n elements of an array of
+ * integers, followed by a new line.
+ * @a: the int array to loop through
+ * @n: the number of indexes to print
+ *
+ * Return: The elements contained within the given array
  */
 
 void print_array(int *a, int n)
@@ -11,7 +16,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if(i == n-1)
+		if (i == n - 1)
 			printf("%d", a[i]);
 		else
 		{
