@@ -3,6 +3,7 @@
 1-swap.c - Contains the definition for a function that swaps the values of two integers.
 1-strncat.c - Contains the definition for a function that concatenates two strings.
 2-strlen.c - Contains the definition for a function that counts the length of a given string.
+2-strncpy. - Contains the deifnition for a function that copies a string.
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
 5-rev_string.c - Contains the definition for a function that reverses a string.
