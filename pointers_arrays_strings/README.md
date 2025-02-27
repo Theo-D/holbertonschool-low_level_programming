@@ -1,6 +1,7 @@
 0-reset_to_98.c - contains the definition for a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 0-strcat.c - Contains the definition for a function that concatenates two strings.
 1-swap.c - Contains the definition for a function that swaps the values of two integers.
+1-strncat.c - Contains the definition for a function that concatenates two strings.
 2-strlen.c - Contains the definition for a function that counts the length of a given string.
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
