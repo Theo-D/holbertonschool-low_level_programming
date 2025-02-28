@@ -5,6 +5,7 @@
 2-strlen.c - Contains the definition for a function that counts the length of a given string.
 2-strncpy. - Contains the deifnition for a function that copies a string.
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
+3-strncmp.c - Contains the definition ofr a function that compares two strings
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
 5-rev_string.c - Contains the definition for a function that reverses a string.
 6-puts2.c - Contains the definition for a function that prints every other character of a string, starting with the first character, followed by a new line.
