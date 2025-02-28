@@ -7,6 +7,7 @@
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
 3-strncmp.c - Contains the definition ofr a function that compares two strings
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
+4-rev_array.c - Contains the definition for a function that reverses an array of integers.
 5-rev_string.c - Contains the definition for a function that reverses a string.
 6-puts2.c - Contains the definition for a function that prints every other character of a string, starting with the first character, followed by a new line.
 7-puts_half.c - Contains the definition for a function that prints half of a string, followed by a new line.
