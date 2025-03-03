@@ -14,6 +14,7 @@
 4-strpbrk.c - Contains the definition for a function that searches a string for any of a set of bytes.
 5-rev_string.c - Contains the definition for a function that reverses a string.i
 5-string_toupper.c - Contains the definition for a function that changes lowercase letters to uppercase.
+5-strstr.c - Contains the defintion for a function that locates a substring.
 6-puts2.c - Contains the definition for a function that prints every other character of a string, starting with the first character, followed by a new line.
 6-cap_string.c - Contains the definition for a function that capitalizes all words of a string.
 7-puts_half.c - Contains the definition for a function that prints half of a string, followed by a new line.
