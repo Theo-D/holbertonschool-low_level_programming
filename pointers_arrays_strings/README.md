@@ -11,6 +11,7 @@
 3-strspn.c - Contains the definition for a function that gets the length of a prefix substring.
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
 4-rev_array.c - Contains the definition for a function that reverses an array of integers.
+4-strpbrk.c - Contains the definition for a function that searches a string for any of a set of bytes.
 5-rev_string.c - Contains the definition for a function that reverses a string.i
 5-string_toupper.c - Contains the definition for a function that changes lowercase letters to uppercase.
 6-puts2.c - Contains the definition for a function that prints every other character of a string, starting with the first character, followed by a new line.
