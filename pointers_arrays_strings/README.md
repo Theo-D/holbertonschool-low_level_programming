@@ -20,6 +20,7 @@
 6-print_chessboard.c - Contains the definition for a function that prints a chessboard.
 7-puts_half.c - Contains the definition for a function that prints half of a string, followed by a new line.
 8-print_array.c - Contains the definition for a function that prints n elements of an array of integers, followed by a new line.
+8-print_diagsums.c - Contains the definition for a function that prints the sum of the two diagonals of a square matrix of integers.
 9-strcpy.c - Contains the definition for a function  that copies the string pointed to by src to the buffer pointed to by dest.
 100-atoi.c - Contains the definition for a function that convert a string to an integer.
 
