@@ -5,6 +5,7 @@
 1-strncat.c - Contains the definition for a function that concatenates two strings.
 2-strlen.c - Contains the definition for a function that counts the length of a given string.
 2-strncpy. - Contains the deifnition for a function that copies a string.
+2-strchar.c - Contains the definition for a function that locates a character in a string.
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
 3-strncmp.c - Contains the definition ofr a function that compares two strings
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
