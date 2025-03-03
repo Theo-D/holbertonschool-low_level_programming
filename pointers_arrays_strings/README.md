@@ -7,7 +7,8 @@
 2-strncpy. - Contains the deifnition for a function that copies a string.
 2-strchar.c - Contains the definition for a function that locates a character in a string.
 3-puts.c - Contains the definition for a function that prints a string, followed by a new line, to stdout.
-3-strncmp.c - Contains the definition ofr a function that compares two strings
+3-strncmp.c - Contains the definition ofr a function that compares two strings.
+3-strspn.c - Contains the definition for a function that gets the length of a prefix substring.
 4-print_rev.c - Contains the definition for a function that prints a string, in reverse, followed by a new line.
 4-rev_array.c - Contains the definition for a function that reverses an array of integers.
 5-rev_string.c - Contains the definition for a function that reverses a string.i
