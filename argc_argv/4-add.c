@@ -19,16 +19,13 @@ int main(int argc, char **argv)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (argv[i][j] >= 48 && argv[i][j] <= 57)
-			{
-				num += atoi(argv[i]);
-			}
-			else
+			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+		num += atoi(argv[i]);
 	}
 	printf("%d\n", num);
 	return (0);
