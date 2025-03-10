@@ -22,14 +22,14 @@ char *_strdup(char *str)
 
 	newStr = malloc((size + 1) * sizeof(char));
 
-	if (str == NULL)
-		return (NULL);
 	while (j < size)
 	{
 		newStr[j] = str[j];
 		j++;
 	}
 	newStr[j] = 0;
+	if (newStr == NULL)
+		return (NULL);
 
 	return (newStr);
 }
