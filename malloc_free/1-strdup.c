@@ -12,6 +12,9 @@ char *_strdup(char *str)
 	unsigned int i = 0;
 	char *newStr;
 
+	if (str == NULL)
+		return (NULL);
+
 	while(str[i])
 	{
 		size++;
@@ -20,15 +23,15 @@ char *_strdup(char *str)
 
 	newStr = (char *)malloc(size * sizeof(char));
 
-	while (j < size)
+	if (str != NULL)
 	{
-		newStr[j] = str[j];
-		j++;
+		while (j < size)
+		{
+			newStr[j] = str[j];
+			j++;
+		}
+		return (newStr);
 	}
-
-	if (str == NULL)
+	else
 		return (NULL);
-	if (newStr == NULL)
-		return (NULL);
-	return (newStr);
 }
