@@ -28,7 +28,7 @@ char *_strdup(char *str)
 		j++;
 	}
 	newStr[j] = 0;
-	if (newStr == NULL)
+	if (!newStr)
 		return (NULL);
 
 	return (newStr);
