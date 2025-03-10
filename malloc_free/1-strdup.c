@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	newStr = malloc((size + 1) * sizeof(char));
 
-	while (j < size)
+	while (j < size + 1)
 	{
 		newStr[j] = str[j];
 		j++;
