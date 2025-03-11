@@ -2,16 +2,22 @@
 #include <stdlib.h>
 
 /**
+ *string_nconcat - Concatenates two strings.
+ *@s1: first string.
+ *@s2: string to concatenate.
+ *@n: Number of characters to concatenate.
  *
+ *Return: Null if malloc fails else, returns array containing
+ *concatenated strings.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr;
 	unsigned int size1 = 0, size2 = 0, nsize = n, i, j;
-	
+
 	if (s1 == NULL)
-		s1 ="";
+		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	while (s1[size1])
