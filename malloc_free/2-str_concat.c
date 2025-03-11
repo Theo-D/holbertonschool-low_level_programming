@@ -15,6 +15,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j;
 	char *arr;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s1[sizeS1])
 	{
 		sizeS1++;
@@ -30,22 +35,15 @@ char *str_concat(char *s1, char *s2)
 	if (arr == NULL)
 		return (NULL);
 
-	if (s1 == NULL)
-		s1 = "";
-	else if (s2 == NULL)
-		s2 = "";
-	else
+	for (i = 0; i < sizeS1; i++)
 	{
-		for (i = 0; i < sizeS1; i++)
-		{
-			arr[i] = s1[i];
-		}
+		arr[i] = s1[i];
+	}
 
-		for (j = sizeS1; j < (sizeS1 + sizeS2); j++)
-		{
-			arr[j] = *s2;
-			s2++;
-		}
+	for (j = sizeS1; j < (sizeS1 + sizeS2); j++)
+	{
+		arr[j] = *s2;
+		s2++;
 	}
 	arr[j] = 0;
 
