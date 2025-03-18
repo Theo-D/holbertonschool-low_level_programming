@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
-	if (argv[2] == NULL)
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		return (99);
