@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * print_numbers - prints numbers given as arguments, separated by a string.
- * @separator: String used as separator between numbers.
+ * print_strings - prints strings given as arguments, separated by a string.
+ * @separator: String used as separator between strings.
  * @n: number of arguments
  *
  * Return: nothing.
@@ -26,8 +26,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			separator = "";
 
 		if (s == NULL)
-			printf("(NIL)");
-		else 
+			printf("(nil)");
+		else
 			printf("%s", s);
 
 		if (i != n - 1)
