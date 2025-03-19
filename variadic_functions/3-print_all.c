@@ -15,13 +15,11 @@ void print_all(const char * const format, ...)
 	char *string;
 
 	va_start(args, format);
-
 	while (format == NULL)
 	{
 		printf("\n");
-		return;	
+		return;
 	}
-
 	while (format[i])
 	{
 		switch (format[i])
