@@ -38,9 +38,8 @@ void printFloat(va_list args)
  */
 void printString(va_list args)
 {
-	char *string;
+	char *string = va_arg(args, char*);
 
-	string = va_arg(args, char*);
 	if (string == NULL)
 		string = "(nil)";
 	printf("%s", string);
@@ -75,6 +74,7 @@ void print_all(const char * const format, ...)
 				fS[j]._print(args);
 				sep = ", ";
 				printf("%s", sep);
+				break;
 			}
 			j++;
 		}
