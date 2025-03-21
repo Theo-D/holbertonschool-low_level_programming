@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdarg.h>
+
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -38,5 +40,17 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
+
+typedef struct formatSpec {
+
+	char f;
+	void (*_print)(va_list args);
+	
+} formSpec_t;
+
+void printChar(va_list args);
+void printInt(va_list args);
+void printfloat(va_list args);
+void printString(va_list args);
 
 #endif
