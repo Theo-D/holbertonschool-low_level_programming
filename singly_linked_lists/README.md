@@ -1,3 +1,5 @@
-0-print_list - Contains the definition for a function that prints all the elements of a list_t.
+0-print_list.c - Contains the definition for a function that prints all the elements of a list_t.
 
-1-list_len - Contains the deifnition for a function that returns the number of elements in a linked list_t list.
+1-list_len.c - Contains the definition for a function that returns the number of elements in a linked list_t list.
+
+2-add_node.c - Contains the definition for a function that adds a new node at the beginning of a list_t list.
