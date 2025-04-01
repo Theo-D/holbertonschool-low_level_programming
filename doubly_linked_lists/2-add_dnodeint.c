@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * add_node - Add a new node at the beginning of a list_t list.
+ * add_dnodeint - Add a new node at the beginning of a dlistint_t list.
  * @head: Pointer to list to which the node should be prepended.
- * @str: Str to be copied into string of new node.
+ * @n: int parameter of object dlistint_t.
  *
  * Return: The adress of newly created node. If malloc fails,
  * returns NULL.
