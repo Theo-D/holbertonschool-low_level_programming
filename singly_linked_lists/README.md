@@ -5,3 +5,5 @@
 2-add_node.c - Contains the definition for a function that adds a new node at the beginning of a list_t list.
 
 3-add_end_node.c - Contains the definition for a function that adds a new node at the end of a list_t list.
+
+4-free_list.c - Contains the definition for a function that frees a list_t list.
