@@ -11,3 +11,7 @@
 5-get_dnodeint_at_index.c - Contains the definition for a function that returns the nth node of a dlistint_t list.
 
 6-sum_dlistint.c - Contains the definition for a function that returns the sum of all the data (n) of a dlistint_t list.
+
+7-insert_dnodeint.c - Contains the definition for a function that inserts a new node at given position.
+
+
