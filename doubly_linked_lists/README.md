@@ -9,3 +9,5 @@
 4-free_dlistint.c - Contains the definition for a function that frees a dlistin_t list.
 
 5-get_dnodeint_at_index.c - Contains the definition for a function that returns the nth node of a dlistint_t list.
+
+6-sum_dlistint.c - Contains the definition for a function that returns the sum of all the data (n) of a dlistint_t list.
