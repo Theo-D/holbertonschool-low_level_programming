@@ -15,12 +15,6 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	while (text_content[i] != 0)
-	{
-		textSize++;
-		i++;
-	}
-
 	fileDesc = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
 	if (text_content == NULL)
@@ -28,7 +22,11 @@ int create_file(const char *filename, char *text_content)
 
 	if (fileDesc == -1)
 		return (-1);
-
+       	while (text_content[i] != 0)
+	{
+		textSize++;
+		i++;
+	}
 	if (i != 0)
 	{
 		writtenChar = write(fileDesc, text_content, textSize);
