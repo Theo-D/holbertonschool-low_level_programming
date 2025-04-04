@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * main - Calls cp().
- * @argc: Number of arguments
- * @argv: Argument value
+ * main - copies the content of a file to another file
+ * @argc: number of arguments
+ * @argv: arguments
  *
  * Return: 0
  */
 int main(int argc, char **argv)
 {
-	char *src;
-	char *dest;
+	char *source;
+	char *destination;
 
 	if (argc != 3)
 	{
@@ -18,56 +18,61 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 
-	src = argv[1];
-	dest = argv[2];
+	source = argv[1];
+	destination = argv[2];
 
-	cp(src, dest);
+	cp(source, destination);
 
 	return (0);
 }
 
 /**
- * cp - Copies the content fom a file to another file
- * @src: File from which to copy.
- * @dest: File to be copied
- *
- * Return: Nothing.
+ * cp - copies the content of a file to another file
+ * @src: source file
+ * @dest: destination file
  */
 void cp(const char *src, const char *dest)
 {
-	int srcFileDesc, destFileDesc, fileDesc;
-	char buff[1024];
-	ssize_t readChar = 0, writtenChar = 0;
+	int fd_src, fd_dest, fd;
+	char buffer[1024];
+	ssize_t bytes_read = 0, bytes_written = 0;
 
-	srcFileDesc = open(src, O_RDONLY, 0444);
-	destFileDesc = open(dest, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fd_src = open(src, O_RDONLY, 0444);
+	fd_dest = open(dest, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
-	readChar = read(srcFileDesc, buff, 1024);
+	/* Reading from source file */
+	bytes_read = read(fd_src, buffer, 1024);
 
-	while (readChar > 0)
+	while (bytes_read > 0)
 	{
-		writtenChar = write(destFileDesc, buff, readChar);
+		/* Writing to destination file */
+		bytes_written = write(fd_dest, buffer, bytes_read);
 		
-		if (destFileDesc == -1 || writtenChar == -1)
+		/* Handling open/write failure */
+		if (fd_dest == -1 || bytes_written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
-		readChar = read(srcFileDesc, buff, 1024);
+		
+		/* Reading from source file */
+		bytes_read = read(fd_src, buffer, 1024);
 	}
 
-	if (srcFileDesc == -1 || readChar <= 0)
+	/* Handling open/read failure */
+	if (fd_src == -1 || bytes_read == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 
-	fileDesc = close(srcFileDesc);
-	fileDesc = close(destFileDesc);
+	fd = close(fd_src);
+	fd = close(fd_dest);
 
-	if (fileDesc == -1)
+	/* Handling close failure */
+	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fileDesc);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
 		exit(100);
 	}
 }
