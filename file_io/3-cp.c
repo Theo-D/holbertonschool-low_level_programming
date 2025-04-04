@@ -44,16 +44,16 @@ void cp(const char *src, const char *dest)
 
 	readChar = read(srcFileDesc, buff, 1024);
 
-	while (bytes_read > 0)
+	while (readChar > 0)
 	{
-		bytes_written = write(fd_dest, buffer, bytes_read);
+		writtenChar = write(destFileDesc, buff, readChar);
 		
-		if (fd_dest == -1 || bytes_written == -1)
+		if (destFileDesc == -1 || writtenChar == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
-		bytes_read = read(fd_src, buffer, 1024);
+		readChar = read(srcFileDesc, buff, 1024);
 	}
 
 	if (srcFileDesc == -1 || readChar <= 0)
