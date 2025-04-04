@@ -29,10 +29,15 @@ int create_file(const char *filename, char *text_content)
 	if (fileDesc == -1)
 		return (-1);
 
-	writtenChar = write(fileDesc, text_content, textSize);
+	if (i != 0)
+	{
+		writtenChar = write(fileDesc, text_content, textSize);
 
-	if (writtenChar == -1)
-		return (-1);
+		if (writtenChar == -1)
+			return (-1);
+	}
+
+	close(fileDesc);
 
 	return (1);
 }
